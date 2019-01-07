@@ -1,0 +1,29 @@
+{
+	"GA_category": {
+		"prefix": "gacategory",
+		"body": ["data-ga-category=\"${1:page_name}\"$0"],
+		"description": "GA Category"
+	},
+	"GA_name": {
+		"prefix": "ganame",
+		"body": ["data-ga-name=\"${1:${TM_FILENAME/(.*)(\\..*)$/${1:/downcase}/}}\"$0"],
+		"description": "GA Name"
+	},
+	"GA_action": {
+		"prefix": "gaaction",
+		"body": ["data-ga-action=\"${1:action_name}\"$0"],
+		"description": "GA Action"
+	},
+	"GA_virtualPageview": {
+		"prefix": "gapageview",
+		"body": ["dataLayer.push({'event': 'virtualPageview', 'pageName': '${1:${TM_FILENAME/(.*)(\\..*)$/${1:/downcase}/}}'})\n\r$0"],
+		"description": "GA Page View - push()"
+	},
+	"GA_clickEvent": {
+		"prefix": "gaclickevent",
+		"body": ["dataLayer.push({'event': '${1:clickEvent}', 'eventCategory': '${2:${TM_FILENAME/(.*)(\\..*)$/${1:/downcase}/}}', 'eventAction': '${3:${TM_FILENAME/(.*)(\\..*)$/${1:/downcase}/}}:${4:submit}', 'eventLabel': `${5:${TM_FILENAME/(.*)(\\..*)$/${1:/downcase}/}}:${6: ID_LEAD }`, '${7:leadID}': `${8: ID_LEAD }`})\n\r$0"],
+		"description": "GA clickEvent - push()"
+	},
+}
+
+
