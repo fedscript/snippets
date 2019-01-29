@@ -1,0 +1,24 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "quotes": ["warn", "single"],
+    "jsx-quotes": ["warn", "prefer-single"],
+    "semi": ["warn", "never"],
+    "comma-dangle": ["warn", "always-multiline"],
+    "comma-spacing": ["warn", {
+      "before": false,
+      "after": true
+    }],
+    "array-bracket-spacing": ["warn", "never"],
+    "space-in-parens": ["warn", "never"],
+    "object-curly-spacing": ["warn", "always"],
+    "computed-property-spacing": ["warn", "never"],
+    "space-infix-ops": "warn",
+    "keyword-spacing": ["warn", { "after": true }],
+    "space-before-blocks": "warn",
+    "curly": "warn",
+    "arrow-spacing": "warn",
+    "no-var": "warn",
+    "no-console": "warn"
+  }
+}
