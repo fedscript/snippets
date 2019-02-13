@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@api/*": ["./src/common/api/*"],
+      "@components/*": ["./src/common/components/*"],
+      "@assets/*": ["./src/common/assets/*"],
+      "@helpers/*": ["./src/common/helpers/*"],
+      "@store/*": ["./src/common/store/*"],
+      "@config/*": ["./src/common/config/*"],
+      "@translations/*": ["./src/common/translations/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modues", "build"]
+}
